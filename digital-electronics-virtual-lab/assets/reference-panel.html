@@ -1,0 +1,100 @@
+<!--
+Developer: Tejas Kamble
+Email: tejasksocials@gmail.com
+Website: https://tejas-personal-portfolio-dev.vercel.app/
+LinkedIn: https://www.linkedin.com/in/tejas-kamble-5342443b1?utm_source=share_via&utm_content=profile&utm_medium=member_android
+Instagram: https://www.instagram.com/tejasworkspace_u1?igsh=MXRzcG55N3psbWxzbw==
+GitHub: https://github.com/tejasworkspacews1-ui
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reference Panel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      background: linear-gradient(135deg, #f4f7fb, #eef7ff);
+      color: #142033;
+      padding: 18px;
+    }
+    .card {
+      border-radius: 18px;
+      background: rgba(255,255,255,0.85);
+      box-shadow: 0 12px 30px rgba(10, 29, 53, 0.08);
+      padding: 16px;
+      margin-bottom: 14px;
+      border: 1px solid rgba(20,32,51,0.08);
+    }
+    h1, h2 {
+      margin: 0 0 10px;
+      line-height: 1.15;
+    }
+    h1 { font-size: 1.15rem; }
+    h2 { font-size: 1rem; }
+    ul { margin: 0; padding-left: 18px; }
+    .tag {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #e9f2ff;
+      color: #205cc5;
+      margin: 0 8px 8px 0;
+      font-size: 0.84rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    th, td {
+      border: 1px solid rgba(20,32,51,0.10);
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background: #f5f8fd;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Digital Electronics Quick Reference</h1>
+    <div class="tag">Number systems</div>
+    <div class="tag">Boolean algebra</div>
+    <div class="tag">K-maps</div>
+    <div class="tag">Flip-flops</div>
+  </div>
+  <div class="card">
+    <h2>Core reminders</h2>
+    <ul>
+      <li>Binary uses base 2; hexadecimal uses base 16.</li>
+      <li>NAND and NOR are universal gates.</li>
+      <li>Canonical SOP comes from minterms; POS comes from maxterms.</li>
+      <li>SR, D, JK, and T flip-flops store state on clock edges.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>Mini truth table</h2>
+    <table>
+      <thead><tr><th>A</th><th>B</th><th>A·B</th><th>A+B</th></tr></thead>
+      <tbody>
+        <tr><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+        <tr><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+        <tr><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

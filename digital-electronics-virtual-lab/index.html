@@ -1,0 +1,352 @@
+<!--
+Developer: Tejas Kamble
+Email: tejasksocials@gmail.com
+Website: https://tejas-personal-portfolio-dev.vercel.app/
+LinkedIn: https://www.linkedin.com/in/tejas-kamble-5342443b1?utm_source=share_via&utm_content=profile&utm_medium=member_android
+Instagram: https://www.instagram.com/tejasworkspace_u1?igsh=MXRzcG55N3psbWxzbw==
+GitHub: https://github.com/tejasworkspacews1-ui
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Digital Electronics Virtual Lab - a college-grade interactive learning platform for digital electronics.">
+  <title>Digital Electronics Virtual Lab | Digital Electronics Virtual Lab</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!--
+Developer: Tejas Kamble
+Email: tejasksocials@gmail.com
+Website: https://tejas-personal-portfolio-dev.vercel.app/
+LinkedIn: https://www.linkedin.com/in/tejas-kamble-5342443b1?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android
+Instagram: https://www.instagram.com/tejasworkspace_u1?igsh=MXRzcG55N3psbWxzbw==
+GitHub: https://github.com/tejasworkspacews1-ui
+-->
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-glass py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-3" href="index.html">
+        <span class="brand-mark"><i class="bi bi-diagram-3-fill"></i></span>
+        <span>
+          <span class="d-block lh-1">Digital Electronics</span>
+          <small class="text-muted-custom fw-semibold">Virtual Lab</small>
+        </span>
+      </a>
+      <div class="d-flex align-items-center gap-2 order-lg-2">
+        <button class="btn btn-outline-primary rounded-pill d-none d-lg-inline-flex align-items-center gap-2" data-theme-toggle type="button">
+          <i class="bi bi-sun-fill" data-theme-icon></i> <span data-theme-label>Light</span>
+        </button>
+        <button class="btn btn-primary rounded-pill d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse d-none d-lg-block">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link " href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link " href="modules.html">Modules</a></li>
+          <li class="nav-item"><a class="nav-link " href="simulations.html">Simulations</a></li>
+          <li class="nav-item"><a class="nav-link " href="contact.html">Contact Us</a></li>
+          <li class="nav-item ms-lg-3">
+            <div id="google_translate_element" class="small"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="mobileMenuLabel">Digital Electronics Virtual Lab</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column gap-3">
+      <a class="btn btn-outline-primary rounded-pill" href="index.html">Home</a>
+      <a class="btn btn-outline-primary rounded-pill" href="about.html">About Us</a>
+      <a class="btn btn-outline-primary rounded-pill" href="modules.html">Modules</a>
+      <a class="btn btn-outline-primary rounded-pill" href="simulations.html">Simulations</a>
+      <a class="btn btn-outline-primary rounded-pill" href="contact.html">Contact Us</a>
+      <div id="google_translate_element_mobile"></div>
+      <button class="btn btn-dark rounded-pill mt-2" data-theme-toggle type="button">
+        <i class="bi bi-sun-fill" data-theme-icon></i> <span data-theme-label>Light</span> Mode
+      </button>
+    </div>
+  </div>
+
+  <main>
+    
+<section class="container py-4 py-lg-5">
+  <div class="hero-shell p-4 p-lg-5">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6 hero-content">
+        <span class="badge badge-soft mb-3">Syllabus-aligned • Interactive • College-ready</span>
+        <h1 class="display-5 fw-black section-title mb-3">Digital Electronics Virtual Lab</h1>
+        <p class="lead text-muted-custom mb-4">
+          A modern practical learning platform that teaches Digital Electronics A to Z through simulations, truth tables, logic gates, canonical forms, adders, and sequential circuit practice.
+        </p>
+        <div class="d-flex flex-wrap gap-3 mb-4">
+          <a href="modules.html" class="btn btn-primary btn-lg rounded-pill px-4">Explore Modules</a>
+          <a href="simulations.html" class="btn btn-outline-primary btn-lg rounded-pill px-4">Open Lab</a>
+          <button class="btn btn-light btn-lg rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#labIntroModal" type="button">Lab Overview</button>
+        </div>
+        <div class="row g-3">
+          <div class="col-6 col-md-4">
+            <div class="stat-card">
+              <div class="small text-muted-custom">Syllabus modules</div>
+              <div class="counter" data-counter="4">4</div>
+              <div class="small-muted">Structured units</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="stat-card">
+              <div class="small text-muted-custom">Topic blocks</div>
+              <div class="counter" data-counter="19">19</div>
+              <div class="small-muted">Detailed subtopics</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="stat-card">
+              <div class="small text-muted-custom">Live tools</div>
+              <div class="counter" data-counter="6">6</div>
+              <div class="small-muted">Lab experiments</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div id="heroCarousel" class="carousel slide hero-carousel shadow-lg" data-bs-ride="carousel" data-bs-interval="2800">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/hero-1.svg" alt="Digital logic illustration">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/hero-2.svg" alt="Number systems illustration">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/hero-3.svg" alt="Sequential circuits illustration">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container pb-2">
+  <div class="row g-3">
+    <div class="col-md-4">
+      <div class="card-soft p-4 h-100 hover-lift">
+        <div class="feature-icon"><i class="bi bi-lightning-charge-fill fs-4"></i></div>
+        <h2 class="h5 fw-bold">Instant learning feedback</h2>
+        <p class="text-muted-custom mb-0">Every gate, input switch, and circuit responds live so students immediately connect theory with observed output.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card-soft p-4 h-100 hover-lift">
+        <div class="feature-icon"><i class="bi bi-diagram-3-fill fs-4"></i></div>
+        <h2 class="h5 fw-bold">Syllabus-first structure</h2>
+        <p class="text-muted-custom mb-0">Modules are organized to mirror the full digital electronics syllabus, making it easy for colleges to map lessons and labs.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card-soft p-4 h-100 hover-lift">
+        <div class="feature-icon"><i class="bi bi-phone-fill fs-4"></i></div>
+        <h2 class="h5 fw-bold">Desktop and mobile ready</h2>
+        <p class="text-muted-custom mb-0">Responsive layouts, a drawer menu, and fluid cards keep the experience clean on phones, tablets, and laptops.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container py-5">
+  <div class="row align-items-center g-4">
+    <div class="col-lg-5">
+      <div class="card-soft p-4">
+        <span class="badge badge-soft mb-3">What students can do here</span>
+        <h2 class="section-title fw-bold mb-3">A real practice environment, not a static notes page.</h2>
+        <p class="text-muted-custom mb-0">
+          Toggle inputs, inspect truth tables, test arithmetic circuits, compare combinational and sequential logic, and review concise explanations without leaving the lab.
+        </p>
+      </div>
+    </div>
+    <div class="col-lg-7">
+      <div class="row g-3">
+        <div class="col-sm-6">
+          <div class="card-soft p-4 h-100 hover-lift">
+            <div class="icon-chip mb-3"><i class="bi bi-toggle-on"></i></div>
+            <h3 class="h6 fw-bold">Interactive gate explorer</h3>
+            <p class="small-muted mb-0">Test NOT, AND, OR, NAND, NOR, XOR, and XNOR with a live output indicator.</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card-soft p-4 h-100 hover-lift">
+            <div class="icon-chip mb-3"><i class="bi bi-calculator-fill"></i></div>
+            <h3 class="h6 fw-bold">Boolean expression builder</h3>
+            <p class="small-muted mb-0">Evaluate custom expressions and see the complete truth table instantly.</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card-soft p-4 h-100 hover-lift">
+            <div class="icon-chip mb-3"><i class="bi bi-gear-wide-connected"></i></div>
+            <h3 class="h6 fw-bold">Arithmetic workbench</h3>
+            <p class="small-muted mb-0">Half/full adders and subtractors help users understand carry and borrow flow.</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card-soft p-4 h-100 hover-lift">
+            <div class="icon-chip mb-3"><i class="bi bi-cpu-fill"></i></div>
+            <h3 class="h6 fw-bold">Flip-flop stepping</h3>
+            <p class="small-muted mb-0">SR, D, JK, and T behavior can be stepped one clock at a time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container py-3">
+  <div class="d-flex align-items-end justify-content-between mb-3">
+    <div>
+      <span class="badge badge-soft mb-2">Visual learning strip</span>
+      <h2 class="section-title fw-bold mb-1">A rotating gallery of key concepts</h2>
+      <p class="text-muted-custom mb-0">This auto-moving gallery keeps the lab visually alive while staying lightweight.</p>
+    </div>
+    <a href="modules.html" class="link-primary fw-semibold">Open syllabus map →</a>
+  </div>
+  <div class="horizontal-gallery">
+    <div class="gallery-track">
+      <div class="gallery-card"><img src="assets/img/strip-1.svg" alt="Truth table visual"><div class="caption"><strong>Truth tables</strong><div class="small-muted">Gate behavior made visible.</div></div></div>
+      <div class="gallery-card"><img src="assets/img/strip-2.svg" alt="K-map visual"><div class="caption"><strong>K-maps</strong><div class="small-muted">Group and simplify logic.</div></div></div>
+      <div class="gallery-card"><img src="assets/img/strip-3.svg" alt="MSI IC visual"><div class="caption"><strong>MSI devices</strong><div class="small-muted">Bridge symbols and hardware.</div></div></div>
+      <div class="gallery-card"><img src="assets/img/strip-1.svg" alt="Truth table visual repeat"><div class="caption"><strong>Truth tables</strong><div class="small-muted">Gate behavior made visible.</div></div></div>
+      <div class="gallery-card"><img src="assets/img/strip-2.svg" alt="K-map visual repeat"><div class="caption"><strong>K-maps</strong><div class="small-muted">Group and simplify logic.</div></div></div>
+      <div class="gallery-card"><img src="assets/img/strip-3.svg" alt="MSI IC visual repeat"><div class="caption"><strong>MSI devices</strong><div class="small-muted">Bridge symbols and hardware.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="container py-5">
+  <div class="row g-4 align-items-stretch">
+    <div class="col-lg-7">
+      <div class="card-soft p-4 h-100">
+        <span class="badge badge-soft mb-3">Why colleges use this</span>
+        <h2 class="section-title fw-bold mb-3">Bridges theory, practicals, and self-study in one place.</h2>
+        <p class="text-muted-custom">
+          Students can practice before lab hours, instructors can use the modules as a teaching aid, and the same interface works as a revision desk before examinations.
+        </p>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="p-3 rounded-4 border h-100" style="border-color: var(--border) !important;">
+              <strong>For students</strong>
+              <p class="small-muted mb-0">Practice repeatedly until the logic becomes intuitive.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 rounded-4 border h-100" style="border-color: var(--border) !important;">
+              <strong>For instructors</strong>
+              <p class="small-muted mb-0">Demonstrate gate behavior and timing clearly in class.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 rounded-4 border h-100" style="border-color: var(--border) !important;">
+              <strong>For labs</strong>
+              <p class="small-muted mb-0">Reduce setup time while preserving experimentation value.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <div class="card-soft p-4 h-100">
+        <h2 class="h5 fw-bold mb-3">Quick actions</h2>
+        <div class="d-grid gap-3">
+          <a class="btn btn-outline-primary rounded-4 py-3" href="modules.html"><i class="bi bi-journal-text me-2"></i>Browse syllabus modules</a>
+          <a class="btn btn-primary rounded-4 py-3" href="simulations.html"><i class="bi bi-play-circle me-2"></i>Start lab simulations</a>
+          <a class="btn btn-outline-secondary rounded-4 py-3" href="contact.html"><i class="bi bi-envelope me-2"></i>Contact the lab team</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" id="labIntroModal" tabindex="-1" aria-labelledby="labIntroModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content rounded-4 border-0 shadow">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="labIntroModalLabel">Digital Electronics Virtual Lab Overview</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body pt-0">
+        <p class="text-muted-custom mb-3">This platform is organized to behave like a compact virtual practical room. Each experiment section is designed for hands-on observation, repetition, and self-assessment.</p>
+        <div class="row g-3">
+          <div class="col-md-6"><div class="p-3 rounded-4 bg-body-tertiary h-100"><strong>What it teaches</strong><p class="small-muted mb-0">Number systems, Boolean algebra, gates, arithmetic blocks, routing circuits, and flip-flops.</p></div></div>
+          <div class="col-md-6"><div class="p-3 rounded-4 bg-body-tertiary h-100"><strong>How it works</strong><p class="small-muted mb-0">Pick inputs, observe outputs, compare truth tables, and practice canonical forms and state changes.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </main>
+
+  <footer class="footer-shell mt-5 py-5">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <span class="brand-mark"><i class="bi bi-diagram-3-fill"></i></span>
+            <div>
+              <div class="fw-bold">Digital Electronics Virtual Lab</div>
+              <div class="small-muted">College-grade practical learning platform</div>
+            </div>
+          </div>
+          <p class="small-muted mb-0">A syllabus-driven, interactive lab companion for digital electronics learning, teaching, and practice.</p>
+        </div>
+        <div class="col-lg-4">
+          <h2 class="h6 fw-bold">Quick Links</h2>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-sm btn-outline-primary rounded-pill" href="modules.html">Modules</a>
+            <a class="btn btn-sm btn-outline-primary rounded-pill" href="simulations.html">Lab</a>
+            <a class="btn btn-sm btn-outline-primary rounded-pill" href="contact.html">Contact</a>
+          </div>
+        </div>
+        <!-- <div class="col-lg-4">
+          <h2 class="h6 fw-bold">Developer Credit</h2>
+          <div class="small-muted">
+            Tejas Kamble • tejasksocials@gmail.com<br>
+            <a class="link-primary" href="https://tejas-personal-portfolio-dev.vercel.app/" target="_blank" rel="noopener noreferrer">Website</a> ·
+            <a class="link-primary" href="https://www.linkedin.com/in/tejas-kamble-5342443b1?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+            <a class="link-primary" href="https://www.instagram.com/tejasworkspace_u1?igsh=MXRzcG55N3psbWxzbw==" target="_blank" rel="noopener noreferrer">Instagram</a> ·
+            <a class="link-primary" href="https://github.com/tejasworkspacews1-ui" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div> -->
+      </div>
+      <hr class="my-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
+        <div class="small-muted">Copyright © Digital Electronics Virtual Lab. All rights reserved.</div>
+        <div class="small-muted">Built for educational use, practice, and college lab workflows.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!--
+Developer: Tejas Kamble
+Email: tejasksocials@gmail.com
+Website: https://tejas-personal-portfolio-dev.vercel.app/
+LinkedIn: https://www.linkedin.com/in/tejas-kamble-5342443b1?utm_source=share_via&utm_content=profile&utm_medium=member_android
+Instagram: https://www.instagram.com/tejasworkspace_u1?igsh=MXRzcG55N3psbWxzbw==
+GitHub: https://github.com/tejasworkspacews1-ui
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Digital Electronics Virtual Lab - a college-grade interactive learning platform for digital electronics.">
+  <title>Simulations | Digital Electronics Virtual Lab</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!--
+Developer: Tejas Kamble
+Email: tejasksocials@gmail.com
+Website: https://tejas-personal-portfolio-dev.vercel.app/
+LinkedIn: https://www.linkedin.com/in/tejas-kamble-5342443b1?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android
+Instagram: https://www.instagram.com/tejasworkspace_u1?igsh=MXRzcG55N3psbWxzbw==
+GitHub: https://github.com/tejasworkspacews1-ui
+-->
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-glass py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-3" href="index.html">
+        <span class="brand-mark"><i class="bi bi-diagram-3-fill"></i></span>
+        <span>
+          <span class="d-block lh-1">Digital Electronics</span>
+          <small class="text-muted-custom fw-semibold">Virtual Lab</small>
+        </span>
+      </a>
+      <div class="d-flex align-items-center gap-2 order-lg-2">
+        <button class="btn btn-outline-primary rounded-pill d-none d-lg-inline-flex align-items-center gap-2" data-theme-toggle type="button">
+          <i class="bi bi-sun-fill" data-theme-icon></i> <span data-theme-label>Light</span>
+        </button>
+        <button class="btn btn-primary rounded-pill d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse d-none d-lg-block">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link " href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link " href="modules.html">Modules</a></li>
+          <li class="nav-item"><a class="nav-link active" href="simulations.html">Simulations</a></li>
+          <li class="nav-item"><a class="nav-link " href="contact.html">Contact Us</a></li>
+          <li class="nav-item ms-lg-3">
+            <div id="google_translate_element" class="small"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="mobileMenuLabel">Digital Electronics Virtual Lab</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column gap-3">
+      <a class="btn btn-outline-primary rounded-pill" href="index.html">Home</a>
+      <a class="btn btn-outline-primary rounded-pill" href="about.html">About Us</a>
+      <a class="btn btn-outline-primary rounded-pill" href="modules.html">Modules</a>
+      <a class="btn btn-outline-primary rounded-pill" href="simulations.html">Simulations</a>
+      <a class="btn btn-outline-primary rounded-pill" href="contact.html">Contact Us</a>
+      <div id="google_translate_element_mobile"></div>
+      <button class="btn btn-dark rounded-pill mt-2" data-theme-toggle type="button">
+        <i class="bi bi-sun-fill" data-theme-icon></i> <span data-theme-label>Light</span> Mode
+      </button>
+    </div>
+  </div>
+
+  <main>
+    
+<section class="container py-5">
+  <div class="row align-items-end g-4 mb-4">
+    <div class="col-lg-8">
+      <span class="badge badge-soft mb-3">Virtual practical lab</span>
+      <h1 class="display-6 fw-bold section-title mb-3">Interactive simulations for digital electronics</h1>
+      <p class="lead text-muted-custom mb-0">Toggle inputs, compare outputs, build expressions, step through states, and practice the core syllabus as a living lab.</p>
+    </div>
+    <div class="col-lg-4 text-lg-end">
+      <button class="btn btn-primary rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#labGuideModal" type="button">Lab guide</button>
+    </div>
+  </div>
+
+  <div class="row g-4 mb-4">
+    <div class="col-lg-6">
+      <div class="card-soft p-4 sim-panel">
+        <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+          <div>
+            <h2 class="h4 fw-bold mb-1">Input bank</h2>
+            <p class="small-muted mb-0">Shared switches for gates and expression experiments.</p>
+          </div>
+          <span class="badge text-bg-success">Live</span>
+        </div>
+        <div class="switch-grid">
+          <div class="logic-toggle"><div class="fw-semibold">A</div><div class="form-switch"><input class="form-check-input" type="checkbox" data-bit="A"></div></div>
+          <div class="logic-toggle"><div class="fw-semibold">B</div><div class="form-switch"><input class="form-check-input" type="checkbox" data-bit="B"></div></div>
+          <div class="logic-toggle"><div class="fw-semibold">C</div><div class="form-switch"><input class="form-check-input" type="checkbox" data-bit="C"></div></div>
+          <div class="logic-toggle"><div class="fw-semibold">D</div><div class="form-switch"><input class="form-check-input" type="checkbox" data-bit="D"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card-soft p-4 sim-panel">
+        <h2 class="h4 fw-bold mb-1">Gate explorer</h2>
+        <p class="small-muted mb-3">Choose a gate, flip inputs, and inspect the output instantly.</p>
+        <div class="row g-3 align-items-end">
+          <div class="col-md-5">
+            <label class="form-label fw-semibold">Gate type</label>
+            <select id="gateSelect" class="form-select">
+              <option>NOT</option>
+              <option selected>AND</option>
+              <option>OR</option>
+              <option>NAND</option>
+              <option>NOR</option>
+              <option>XOR</option>
+              <option>XNOR</option>
+            </select>
+          </div>
+          <div class="col-md-7">
+            <div class="d-flex flex-wrap gap-2 justify-content-md-end">
+              <button class="btn btn-outline-secondary rounded-pill" data-reset-gates type="button">Reset gates</button>
+            </div>
+          </div>
+        </div>
+        <div class="row g-3 mt-2">
+          <div class="col-md-6">
+            <div class="p-3 rounded-4 border h-100" style="border-color: var(--border) !important;">
+              <div id="gateInfo" class="small-muted mb-3"></div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="output-pill off" id="gateOutput">LOW</div>
+                <div>
+                  <div class="fw-bold">Live output</div>
+                  <div class="small-muted">HIGH / LOW changes update immediately.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3 rounded-4 border h-100" style="border-color: var(--border) !important;">
+              <strong>Truth table</strong>
+              <div class="table-wrap mt-2" id="gateTruthTable"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 mb-4">
+    <div class="col-lg-6">
+      <div class="card-soft p-4 sim-panel">
+        <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+          <div>
+            <h2 class="h4 fw-bold mb-1">Boolean expression builder</h2>
+            <p class="small-muted mb-0">Use A, B, C, D with symbols: !  &amp;  |  ^  and parentheses.</p>
+          </div>
+          <span class="badge text-bg-primary">SOP / POS</span>
+        </div>
+        <label class="form-label fw-semibold">Expression</label>
+        <input id="booleanExpression" class="form-control form-control-lg mb-3" value="!(A&B)|C" aria-describedby="booleanHint">
+        <div id="booleanHint" class="small-muted mb-3">Example: !(A&B)|C</div>
+        <div class="p-3 rounded-4 border mb-3" style="border-color: var(--border) !important;">
+          <strong>Current value</strong>
+          <div class="result-badge mt-2" id="expressionResult">FALSE</div>
+        </div>
+        <div class="table-wrap" id="expressionTruthTable"></div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card-soft p-4 sim-panel">
+        <h2 class="h4 fw-bold mb-1">Arithmetic circuit workbench</h2>
+        <p class="small-muted mb-3">Half/full adders and subtractors with live inputs.</p>
+        <div class="row g-3 align-items-end">
+          <div class="col-md-5">
+            <label class="form-label fw-semibold">Experiment</label>
+            <select id="arithMode" class="form-select">
+              <option value="half-adder">Half adder</option>
+              <option value="full-adder" selected>Full adder</option>
+              <option value="half-subtractor">Half subtractor</option>
+              <option value="full-subtractor">Full subtractor</option>
+            </select>
+          </div>
+          <div class="col-md-7">
+            <div class="switch-grid">
+              <div class="logic-toggle"><div class="fw-semibold">A</div><div class="form-switch"><input class="form-check-input" type="checkbox" data-a></div></div>
+              <div class="logic-toggle"><div class="fw-semibold">B</div><div class="form-switch"><input class="form-check-input" type="checkbox" data-b></div></div>
+              <div class="logic-toggle"><div class="fw-semibold">Cin / Bin</div><div class="form-switch"><input class="form-check-input" type="checkbox" data-cin></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="p-3 rounded-4 border my-3" style="border-color: var(--border) !important;">
+          <strong>Live result</strong>
+          <div id="arithOutput" class="mt-2"></div>
+        </div>
+        <div class="table-wrap" id="arithTruthTable"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 mb-4">
+    <div class="col-lg-6">
+      <div class="card-soft p-4 sim-panel">
+        <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+          <div>
+            <h2 class="h4 fw-bold mb-1">Sequential circuit stepper</h2>
+            <p class="small-muted mb-0">Explore SR, D, JK, and T flip-flops with clocked state changes.</p>
+          </div>
+          <span class="badge text-bg-warning">Stateful</span>
+        </div>
+        <div class="row g-3 align-items-end">
+          <div class="col-md-5">
+            <label class="form-label fw-semibold">Flip-flop type</label>
+            <select id="ffType" class="form-select">
+              <option>SR</option>
+              <option>D</option>
+              <option selected>JK</option>
+              <option>T</option>
+            </select>
+          </div>
+          <div class="col-md-7 d-flex flex-wrap gap-2 justify-content-md-end">
+            <button class="btn btn-primary rounded-pill" data-ff-clock type="button">Clock pulse</button>
+            <button class="btn btn-outline-secondary rounded-pill" data-ff-reset type="button">Reset state</button>
+          </div>
+        </div>
+        <div class="switch-grid mt-3" id="ffPanel"></div>
+        <div class="row g-3 mt-2">
+          <div class="col-md-6">
+            <div class="p-3 rounded-4 border h-100" style="border-color: var(--border) !important;">
+              <strong>Current state</strong>
+              <div class="d-flex gap-3 mt-3">
+                <div class="output-pill" id="ffQ">0</div>
+                <div class="output-pill off" id="ffQBar">1</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3 rounded-4 border h-100" style="border-color: var(--border) !important;">
+              <strong>Truth / excitation hint</strong>
+              <div id="ffNote" class="small-muted mt-2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="table-wrap mt-3" id="ffTruthTable"></div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card-soft p-4 sim-panel">
+        <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+          <div>
+            <h2 class="h4 fw-bold mb-1">K-map & canonical form builder</h2>
+            <p class="small-muted mb-0">Select minterms, inspect the map, and derive canonical SOP and POS forms.</p>
+          </div>
+          <span class="badge text-bg-success">2–4 variables</span>
+        </div>
+        <div class="row g-3 align-items-end">
+          <div class="col-md-5">
+            <label class="form-label fw-semibold">Variables</label>
+            <select id="kmapVars" class="form-select">
+              <option value="2">2 variables</option>
+              <option value="3">3 variables</option>
+              <option value="4" selected>4 variables</option>
+            </select>
+          </div>
+          <div class="col-md-7 text-md-end">
+            <button class="btn btn-outline-secondary rounded-pill" data-kmap-clear type="button">Clear cells</button>
+          </div>
+        </div>
+        <div id="kmapGrid" class="mt-3"></div>
+        <div class="row g-3 mt-3">
+          <div class="col-12">
+            <div class="p-3 rounded-4 border" style="border-color: var(--border) !important;">
+              <strong>Canonical SOP</strong>
+              <div id="kmapSOP" class="small-muted mt-2"></div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="p-3 rounded-4 border" style="border-color: var(--border) !important;">
+              <strong>Canonical POS</strong>
+              <div id="kmapPOS" class="small-muted mt-2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="alert alert-info mt-3 mb-0">
+          This section is ideal for practicing K-map thinking before a physical lab demonstration.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 align-items-stretch">
+    <div class="col-lg-6">
+      <div class="card-soft p-4 h-100 iframe-card">
+        <h2 class="section-title fw-bold mb-3">Reference panel</h2>
+        <iframe src="assets/reference-panel.html" title="Digital Electronics reference panel"></iframe>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card-soft p-4 h-100">
+        <h2 class="section-title fw-bold mb-3">Experiment flow</h2>
+        <div class="vstack gap-3">
+          <div class="p-3 rounded-4 bg-body-tertiary"><strong>Step 1</strong><p class="small-muted mb-0">Choose a concept and read the associated learning goal.</p></div>
+          <div class="p-3 rounded-4 bg-body-tertiary"><strong>Step 2</strong><p class="small-muted mb-0">Toggle inputs or select cells to produce a new result.</p></div>
+          <div class="p-3 rounded-4 bg-body-tertiary"><strong>Step 3</strong><p class="small-muted mb-0">Compare the output against the truth table or canonical form.</p></div>
+          <div class="p-3 rounded-4 bg-body-tertiary"><strong>Step 4</strong><p class="small-muted mb-0">Reset and repeat until the behavior feels intuitive.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="labGuideModal" tabindex="-1" aria-labelledby="labGuideModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4 border-0 shadow">
+        <div class="modal-header border-0">
+          <h2 class="modal-title h4 fw-bold" id="labGuideModalLabel">How to use the virtual lab</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-0">
+          <div class="row g-3">
+            <div class="col-md-6"><div class="p-3 rounded-4 bg-body-tertiary h-100"><strong>Gate practice</strong><p class="small-muted mb-0">Pick a gate and flip A/B to match the truth table.</p></div></div>
+            <div class="col-md-6"><div class="p-3 rounded-4 bg-body-tertiary h-100"><strong>Boolean practice</strong><p class="small-muted mb-0">Enter an expression and inspect all row combinations.</p></div></div>
+            <div class="col-md-6"><div class="p-3 rounded-4 bg-body-tertiary h-100"><strong>Arithmetic practice</strong><p class="small-muted mb-0">Observe sum, carry, difference, and borrow in real time.</p></div></div>
+            <div class="col-md-6"><div class="p-3 rounded-4 bg-body-tertiary h-100"><strong>Sequential practice</strong><p class="small-muted mb-0">Apply a clock pulse to advance the stored state.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer-shell mt-5 py-5">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <span class="brand-mark"><i class="bi bi-diagram-3-fill"></i></span>
+            <div>
+              <div class="fw-bold">Digital Electronics Virtual Lab</div>
+              <div class="small-muted">College-grade practical learning platform</div>
+            </div>
+          </div>
+          <p class="small-muted mb-0">A syllabus-driven, interactive lab companion for digital electronics learning, teaching, and practice.</p>
+        </div>
+        <div class="col-lg-4">
+          <h2 class="h6 fw-bold">Quick Links</h2>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-sm btn-outline-primary rounded-pill" href="modules.html">Modules</a>
+            <a class="btn btn-sm btn-outline-primary rounded-pill" href="simulations.html">Lab</a>
+            <a class="btn btn-sm btn-outline-primary rounded-pill" href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <h2 class="h6 fw-bold">Developer Credit</h2>
+          <div class="small-muted">
+            Tejas Kamble • tejasksocials@gmail.com<br>
+            <a class="link-primary" href="https://tejas-personal-portfolio-dev.vercel.app/" target="_blank" rel="noopener noreferrer">Website</a> ·
+            <a class="link-primary" href="https://www.linkedin.com/in/tejas-kamble-5342443b1?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+            <a class="link-primary" href="https://www.instagram.com/tejasworkspace_u1?igsh=MXRzcG55N3psbWxzbw==" target="_blank" rel="noopener noreferrer">Instagram</a> ·
+            <a class="link-primary" href="https://github.com/tejasworkspacews1-ui" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
+        <div class="small-muted">Copyright © Digital Electronics Virtual Lab. All rights reserved.</div>
+        <div class="small-muted">Built for education, practice, and college lab workflows.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
